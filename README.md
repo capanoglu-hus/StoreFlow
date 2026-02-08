@@ -54,7 +54,7 @@ StoreFlow/
 ├── appsettings.json    # Uygulama ayarları
 └── Program.cs          # Uygulama giriş noktası
 
-
+```
 
 
 ![Kayıt 2026-02-09 001500](https://github.com/user-attachments/assets/c0527540-36a4-4afb-a4e5-45f681d41a63)
