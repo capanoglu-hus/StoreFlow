@@ -1,4 +1,4 @@
-# StoreFlow
+
 # StoreFlow
 
 ASP.NET Core MVC tabanlı bir mağaza yönetim uygulaması. Ürün, kategori, müşteri, sipariş ve görev yönetimi özellikleri sunar.
@@ -55,7 +55,19 @@ StoreFlow/
 └── Program.cs          # Uygulama giriş noktası
 
 
-![Kayıt 2026-02-08 233937](https://github.com/user-attachments/assets/bb4c106a-2dd9-4014-90ae-bee4e43c6d8e)
+
+
+![Kayıt 2026-02-09 001500](https://github.com/user-attachments/assets/c0527540-36a4-4afb-a4e5-45f681d41a63)
+
+
+![Kayıt 2026-02-09 001629](https://github.com/user-attachments/assets/d8c4253d-2311-4d29-afd7-0a7d47316198)
+
+
+![Kayıt 2026-02-09 001754](https://github.com/user-attachments/assets/116b9a94-9d1d-4a1e-a59c-1c0dbeb7359b)
+
+
+![Kayıt 2026-02-09 001908](https://github.com/user-attachments/assets/3d59ed16-6f79-4b3a-a90d-e4b759292ce6)
 
 
 Bu proje eğitim amaçlı geliştirilmiştir.
+( https://www.udemy.com/course/entityframework-core-masterclass-70-linq-ef-core-metodu/ )
