@@ -1,0 +1,52 @@
+﻿@model List<ProductWithCategoryViewModel>
+@{
+    ViewData["Title"] = "ProductListWithCategories";
+    Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Ürün -categori  Listesi</h3>
+                <p class="card-description">
+                    <code>Ürün işlemlerinizi buradan yapabilirsiniz</code>
+                </p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ürün Adı</th>
+                                <th>Stok Sayısı</th>
+                                <th>Kategori Adı</th>
+                                
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    
+                                    <td>@count</td>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.ProductStock</td>
+                                    <td>@item.CategoryName</td>
+                                    
+
+                                   
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    <a href="/Product/CreateProduct/" class="btn btn-outline-primary"> Yeni ürün Ekle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

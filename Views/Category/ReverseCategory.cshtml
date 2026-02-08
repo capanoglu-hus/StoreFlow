@@ -1,0 +1,55 @@
+﻿@model List<Category>
+@{
+    ViewData["Title"] = "ReverseCategory";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<h3>@ViewBag.category</h3>
+<h3>@ViewBag.category2</h3>
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"> Tersten Kategori Listesi</h3>
+                <p class="card-description">
+                    <code>kategori işlemlerinizi buradan yapabilirsiniz</code>
+                </p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Kategori ID</th>
+                                <th>Kategori Adı</th>
+                                <th>Durum</th>
+                                <th>sil</th>
+                                <th>güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th>@item.CategoryId</th>
+                                    <td>@item.CategoryName</td>
+                                    @if (item.CategoryStatus == true)
+                                    {
+                                        <td><label class="badge badge-success badge-pill">Aktif kategori</label></td>
+                                    }
+                                    else
+                                    {
+                                        <td><label class="badge badge-danger badge-pill">pasif kategori</label></td>
+                                    }
+                                    <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-outline-success">Güncelle</a></td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    <a href="/Category/CreateCategory/" class="btn btn-outline-primary"> Yeni Kategori Ekle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

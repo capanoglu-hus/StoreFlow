@@ -1,0 +1,246 @@
+INSERT INTO Categoryies (CategoryName, CategoryStatus)
+VALUES
+('Elektronik', 1),
+('Bilgisayar', 1),
+('Cep Telefonlarý', 1),
+('Aksesuarlar', 1),
+('Beyaz Eþya', 1),
+('Küçük Ev Aletleri', 1),
+('Ofis Malzemeleri', 1),
+('Kýrtasiye', 1),
+('Mobilya', 1),
+('Aydýnlatma', 1),
+('Giyim', 1),
+('Ayakkabý', 1),
+('Spor Ürünleri', 1),
+('Kozmetik', 1),
+('Kiþisel Bakým', 1),
+('Anne & Bebek', 1),
+('Oyuncak', 1),
+('Kitap', 1),
+('Hýrdavat', 1),
+('Otomotiv', 1);
+-------------------------------
+INSERT INTO Customers 
+(CustomerName, CustomerSurname, CustomerCity, CustomerDistrict, CustomerBalance, CustomerImage)
+VALUES
+('Ahmet', 'Yýlmaz', 'Ýstanbul', 'Kadýköy', 1250.50, NULL),
+('Mehmet', 'Demir', 'Ankara', 'Çankaya', 980.00, NULL),
+('Ayþe', 'Kaya', 'Ýzmir', 'Bornova', 450.75, NULL),
+('Fatma', 'Þahin', 'Bursa', 'Nilüfer', 300.00, NULL),
+('Ali', 'Çelik', 'Antalya', 'Muratpaþa', 2200.00, NULL),
+('Zeynep', 'Aydýn', 'Adana', 'Seyhan', 150.25, NULL),
+('Mustafa', 'Arslan', 'Konya', 'Selçuklu', 875.00, NULL),
+('Elif', 'Doðan', 'Eskiþehir', 'Odunpazarý', 640.90, NULL),
+('Emre', 'Kýlýç', 'Kocaeli', 'Ýzmit', 120.00, NULL),
+('Merve', 'Öztürk', 'Tekirdað', 'Çorlu', 980.40, NULL),
+
+('Burak', 'Koç', 'Samsun', 'Atakum', 310.00, NULL),
+('Hatice', 'Yýldýrým', 'Trabzon', 'Ortahisar', 560.60, NULL),
+('Can', 'Erdoðan', 'Balýkesir', 'Edremit', 1450.00, NULL),
+('Seda', 'Aksoy', 'Aydýn', 'Kuþadasý', 780.20, NULL),
+('Onur', 'Güneþ', 'Muðla', 'Fethiye', 2000.00, NULL),
+('Büþra', 'Polat', 'Kayseri', 'Melikgazi', 95.00, NULL),
+('Serkan', 'Eren', 'Manisa', 'Yunusemre', 430.30, NULL),
+('Derya', 'Bulut', 'Çanakkale', 'Merkez', 610.00, NULL),
+('Tolga', 'Keskin', 'Sakarya', 'Adapazarý', 270.80, NULL),
+('Gamze', 'Taþ', 'Denizli', 'Pamukkale', 890.00, NULL),
+
+('Ýsmail', 'Karaca', 'Gaziantep', 'Þahinbey', 1330.00, NULL),
+('Pýnar', 'Çoban', 'Mersin', 'Yeniþehir', 420.45, NULL),
+('Hakan', 'Sarý', 'Hatay', 'Antakya', 760.00, NULL),
+('Ece', 'Uslu', 'Isparta', 'Merkez', 180.00, NULL),
+('Volkan', 'Yavuz', 'Afyonkarahisar', 'Merkez', 990.90, NULL),
+('Aslý', 'Sezer', 'Uþak', 'Merkez', 515.00, NULL),
+('Kerem', 'Toprak', 'Kütahya', 'Merkez', 340.00, NULL),
+('Nazlý', 'Öner', 'Sinop', 'Merkez', 210.75, NULL),
+('Murat', 'Altun', 'Rize', 'Merkez', 680.00, NULL),
+('Selin', 'Bayram', 'Edirne', 'Merkez', 1050.00, NULL);
+
+------------------
+
+INSERT INTO Products
+(ProductName, ProductPrice, ProductStock, CategoryId)
+VALUES
+-- Elektronik (1)
+('LED TV 55 Ýnç', 24500, 15, 1),
+('Bluetooth Hoparlör', 1850, 40, 1),
+('Powerbank 20000mAh', 950, 60, 1),
+
+-- Bilgisayar (2)
+('Dizüstü Bilgisayar i7', 38500, 8, 2),
+('Oyuncu Mouse', 780, 35, 2),
+('Mekanik Klavye', 1450, 25, 2),
+
+-- Cep Telefonlarý (3)
+('Akýllý Telefon 128GB', 21500, 12, 3),
+('Akýllý Telefon 256GB', 26500, 10, 3),
+('Tuþlu Telefon', 1200, 20, 3),
+
+-- Aksesuarlar (4)
+('Telefon Kýlýfý', 150, 150, 4),
+('Ekran Koruyucu Cam', 90, 300, 4),
+('Kulaklýk Bluetooth', 950, 70, 4),
+
+-- Beyaz Eþya (5)
+('Buzdolabý NoFrost', 32500, 5, 5),
+('Çamaþýr Makinesi', 28500, 6, 5),
+('Bulaþýk Makinesi', 27000, 4, 5),
+
+-- Küçük Ev Aletleri (6)
+('Elektrikli Süpürge', 7800, 12, 6),
+('Kahve Makinesi', 5200, 18, 6),
+('Blender Seti', 3600, 20, 6),
+
+-- Ofis Malzemeleri (7)
+('Yazýcý Lazer', 8400, 7, 7),
+('Fotokopi Kaðýdý A4', 220, 200, 7),
+
+-- Kýrtasiye (8)
+('Tükenmez Kalem', 12, 500, 8),
+('Defter Kareli', 45, 300, 8),
+
+-- Mobilya (9)
+('Çalýþma Masasý', 6500, 10, 9),
+('Ofis Koltuðu', 8200, 8, 9),
+
+-- Aydýnlatma (10)
+('LED Avize', 4500, 14, 10),
+('Masa Lambasý', 850, 40, 10),
+
+-- Giyim (11)
+('Erkek Tiþört', 350, 100, 11),
+('Kadýn Ceket', 1250, 30, 11),
+
+-- Ayakkabý (12)
+('Spor Ayakkabý', 2200, 45, 12),
+('Klasik Deri Ayakkabý', 3100, 20, 12),
+
+-- Spor Ürünleri (13)
+('Koþu Bandý', 24500, 3, 13),
+('Dambýl Seti', 1800, 25, 13),
+
+-- Kozmetik (14)
+('Yüz Kremi', 420, 80, 14),
+('Parfüm 100ml', 1850, 40, 14),
+('Þampuan Bitkisel', 180, 120, 14),
+
+-- Kiþisel Bakým (15)
+('Saç Kurutma Makinesi', 2100, 30, 15),
+('Týraþ Makinesi', 3200, 22, 15),
+
+-- Anne & Bebek (16)
+('Bebek Bezi Paket', 780, 90, 16),
+('Biberon Seti', 450, 60, 16),
+
+-- Oyuncak (17)
+('Uzaktan Kumandalý Araba', 1250, 35, 17),
+('Yapboz 1000 Parça', 320, 70, 17),
+
+-- Kitap (18)
+('Roman Kitabý', 180, 120, 18),
+('Yazýlým Öðreniyorum', 420, 45, 18),
+
+-- Hýrdavat (19)
+('Matkap Seti', 4200, 15, 19),
+('Vida Seti', 250, 200, 19),
+
+-- Otomotiv (20)
+('Araç Süpürgesi', 950, 40, 20),
+('Motor Yaðý 4L', 1850, 35, 20);
+
+
+-----------------------
+
+INSERT INTO Orders
+(ProductId, CustomerId, OrderCount, UnitPrice, TotalPrice, OrderDate)
+VALUES
+(1,1,1,24500,24500,'2025-01-03'),
+(2,2,2,1850,3700,'2025-01-07'),
+(3,3,3,950,2850,'2025-01-12'),
+(4,4,1,38500,38500,'2025-01-20'),
+(5,5,2,780,1560,'2025-01-25'),
+
+(6,6,1,1450,1450,'2025-02-02'),
+(7,7,1,21500,21500,'2025-02-05'),
+(8,8,1,26500,26500,'2025-02-08'),
+(9,9,2,1200,2400,'2025-02-11'),
+(10,10,5,150,750,'2025-02-14'),
+
+(11,11,3,90,270,'2025-02-18'),
+(12,12,2,950,1900,'2025-02-22'),
+(13,13,1,32500,32500,'2025-03-01'),
+(14,14,1,28500,28500,'2025-03-05'),
+(15,15,1,27000,27000,'2025-03-10'),
+
+(16,16,2,7800,15600,'2025-03-14'),
+(17,17,1,5200,5200,'2025-03-18'),
+(18,18,3,3600,10800,'2025-03-22'),
+(19,19,1,8400,8400,'2025-03-25'),
+(20,20,10,220,2200,'2025-03-28'),
+
+(21,21,20,12,240,'2025-04-02'),
+(22,22,8,45,360,'2025-04-05'),
+(23,23,1,6500,6500,'2025-04-08'),
+(24,24,1,8200,8200,'2025-04-11'),
+(25,25,2,4500,9000,'2025-04-15'),
+
+(26,26,4,850,3400,'2025-04-18'),
+(27,27,3,350,1050,'2025-04-22'),
+(28,28,1,1250,1250,'2025-04-25'),
+(29,29,2,2200,4400,'2025-05-01'),
+(30,30,1,3100,3100,'2025-05-05'),
+
+(31,1,1,24500,24500,'2025-05-10'),
+(32,2,1,1800,1800,'2025-05-14'),
+(33,3,2,420,840,'2025-05-18'),
+(34,4,1,2100,2100,'2025-05-21'),
+(35,5,1,3200,3200,'2025-05-25'),
+
+(36,6,2,780,1560,'2025-06-01'),
+(37,7,1,450,450,'2025-06-05'),
+(38,8,1,1250,1250,'2025-06-10'),
+(39,9,2,320,640,'2025-06-15'),
+(40,10,3,180,540,'2025-06-20'),
+
+(41,11,1,4200,4200,'2025-07-01'),
+(42,12,4,250,1000,'2025-07-06'),
+(43,13,1,950,950,'2025-07-10'),
+(44,14,2,1850,3700,'2025-07-15'),
+(45,15,1,780,780,'2025-07-20'),
+
+(46,16,1,450,450,'2025-08-01'),
+(47,17,2,320,640,'2025-08-05'),
+(1,18,1,24500,24500,'2025-08-10'),
+(2,19,1,1850,1850,'2025-08-15'),
+(3,20,2,950,1900,'2025-08-20');
+
+----------------------
+INSERT INTO Activities
+(Title, Description, ActivityTime)
+VALUES
+('Sevkiyat', 'Sabah çýkýþ', '08:30:00'),
+('Kargo Hazýr', 'Paketleme bitti', '09:15:00'),
+('Mal Alým', 'Tedarikçi geldi', '10:00:00'),
+('Stok Sayým', 'Depo kontrol', '11:00:00'),
+('Toplantý', 'Satýþ planý', '13:00:00')
+
+-------------------------
+
+INSERT INTO Todos (Description, Status)
+VALUES
+('Stok sayýmý yap', 1),
+('Yeni ürün ekle', 0),
+('Kargo takip kontrol', 1),
+('Fatura kes', 1),
+('Depo düzenle', 0),
+('Tedarikçi ara', 1),
+('Eksik ürün sipariþi', 0),
+('Müþteri aramasý yap', 1),
+('Satýþ raporu hazýrla', 0),
+('Ürün fiyat güncelle', 1),
+('Ýade kontrolü yap', 0),
+('Sipariþ paketle', 1),
+('Stok uyarý ayarla', 0),
+('Haftalýk toplantý', 1),
+('Sistem yedekle', 0);

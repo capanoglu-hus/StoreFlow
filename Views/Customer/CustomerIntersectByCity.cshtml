@@ -1,0 +1,13 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "CustomerIntersectByCity";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<h1>Kesisim Kümesi</h1>
+<ul>
+    @foreach(var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>

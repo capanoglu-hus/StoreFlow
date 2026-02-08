@@ -1,0 +1,28 @@
+﻿@model Customer
+@{
+    ViewData["Title"] = "CustomergetCity";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Şehirde Müşteri var mı ? </h4>
+
+                <form asp-action="CustomergetCity"  class="forms-sample" method="get">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Şehir adı</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Şehir adı giriniz" name="city" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mr-2">şehiri kontrol et </button>
+
+                </form>
+                <br/>
+                <div class="alert alert-success">@ViewBag.message</div>
+            </div>
+        </div>
+    </div>
+</div>
+
